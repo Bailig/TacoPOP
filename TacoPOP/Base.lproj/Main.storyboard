@@ -41,7 +41,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4bD-CQ-7Z9">
-                                <rect key="frame" x="8" y="88" width="359" height="571"/>
+                                <rect key="frame" x="8" y="96" width="359" height="563"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vb6-VY-yEE">
                                     <size key="itemSize" width="50" height="50"/>
@@ -58,7 +58,7 @@
                             <constraint firstAttribute="trailing" secondItem="4bD-CQ-7Z9" secondAttribute="trailing" constant="8" id="BEW-jd-QQS"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4bD-CQ-7Z9" secondAttribute="bottom" constant="8" id="SAG-wW-gSg"/>
                             <constraint firstItem="4bD-CQ-7Z9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="SI1-qs-FDQ"/>
-                            <constraint firstItem="4bD-CQ-7Z9" firstAttribute="top" secondItem="kP9-Ou-Ge1" secondAttribute="bottom" constant="8" id="VGe-kA-JXQ"/>
+                            <constraint firstItem="4bD-CQ-7Z9" firstAttribute="top" secondItem="kP9-Ou-Ge1" secondAttribute="bottom" constant="16" id="VGe-kA-JXQ"/>
                             <constraint firstItem="kP9-Ou-Ge1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vs1-e0-p5f"/>
                             <constraint firstAttribute="trailing" secondItem="kP9-Ou-Ge1" secondAttribute="trailing" id="y26-oq-hmv"/>
                         </constraints>

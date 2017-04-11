@@ -21,7 +21,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brisket" translatesAutoresizingMaskIntoConstraints="NO" id="LJ6-vn-NBE">
                         <rect key="frame" x="0.0" y="0.0" width="95" height="67"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brisket Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN5-gg-1MN">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brisket Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="WN5-gg-1MN">
                         <rect key="frame" x="0.0" y="75" width="95" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="FHj-1F-m0V"/>

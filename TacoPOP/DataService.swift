@@ -9,17 +9,20 @@
 import Foundation
 
 protocol DataServiceDelegate: class {
-    func tacoDataLoaded()
+    func loadedData(tacos: [Taco])
 }
 
 
 class DataService {
+    static let dataService = DataService()
+    
     private init() { }
     
-    static weak var delegate: DataServiceDelegate?
+    weak var delegate: DataServiceDelegate?
     
-    static var tacos: [Taco] {
-        var tacos = [Taco]()
+    private var tacos = [Taco]()
+    
+    func loadTacoData() {
         // Chicken Tacos
         tacos.append(Taco(id: 1, productName: "Loaded Flour Chicken Taco", shell: TacoShell.Flour, protein: TacoProtein.Chicken, condiment: TacoCondiment.Loaded))
         tacos.append(Taco(id: 2, productName: "Loaded Corn Chicken Taco", shell: TacoShell.Corn, protein: TacoProtein.Chicken, condiment: TacoCondiment.Loaded))
@@ -44,7 +47,6 @@ class DataService {
         tacos.append(Taco(id: 15, productName: "Plain Flour Fish Taco", shell: TacoShell.Flour, protein: TacoProtein.Fish, condiment: TacoCondiment.Plain))
         tacos.append(Taco(id: 16, productName: "Plain Corn Fish Taco", shell: TacoShell.Corn, protein: TacoProtein.Fish, condiment: TacoCondiment.Plain))
         
-        delegate?.tacoDataLoaded()
-        return tacos
+        delegate?.loadedData(tacos: tacos)
     }
 }

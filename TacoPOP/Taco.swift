@@ -14,11 +14,11 @@ enum TacoShell {
     case Corn
 }
 
-enum TacoProtein {
-    case Beef
-    case Chicken
-    case Brisket
-    case Fish
+enum TacoProtein: String {
+    case Beef = "Beef"
+    case Chicken = "Chicken"
+    case Brisket = "Brisket"
+    case Fish = "Fish"
 }
 
 enum TacoCondiment {
@@ -32,8 +32,4 @@ struct Taco {
     private(set) var shell: TacoShell!
     private(set) var protein: TacoProtein!
     private(set) var condiment: TacoCondiment!
-    
-//    init(id: Int, productName: String, shell: TacoShell, protein: TacoProtein, condiment: TacoCondiment) {
-//        self.id = id
-//    }
 }

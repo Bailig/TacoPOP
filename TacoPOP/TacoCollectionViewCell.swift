@@ -8,15 +8,15 @@
 
 import UIKit
 
-class TacoCollectionViewCell: UICollectionViewCell {
+class TacoCollectionViewCell: UICollectionViewCell, NibLoadableView, Shakeable {
 
     @IBOutlet weak var tacoImage: UIImageView!
     @IBOutlet weak var tacoLabel: UILabel!
     
     var taco: Taco! {
         didSet {
-            tacoImage.image = UIImage(named: "\(taco.protein)")
-            tacoLabel.text = "\(taco.protein)"
+            tacoImage.image = UIImage(named: taco.protein.rawValue)
+            tacoLabel.text = taco.productName
         }
     }
 }
